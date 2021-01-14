@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_LAY_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/blue"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/main_IMG_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sunny_day"
+        />
+
+    <TextView
+        android:id="@+id/main_LBL_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Sun Alert"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/main_IMG_cloud1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cloud"
+        />
+
+    <TextView
+        android:id="@+id/main_LBL_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_IMG_sun"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:textAlignment="center"
+        android:text="That's perfect!"
+        android:textSize="30sp"
+        android:fontFamily="casual"
+        />
+
+    <ImageView
+        android:id="@+id/main_IMG_sun"
+        android:layout_width="300dp"
+        android:layout_height="270dp"
+        android:layout_below="@+id/main_LBL_title"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/sun"
+        />
+
+    <TextView
+        android:id="@+id/main_LBL_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_LBL_info"
+        android:layout_alignTop="@id/main_IMG_sun"
+        android:layout_marginTop="95dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="0"
+        android:textSize="50sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/main_LBL_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:background="@drawable/rectangle"
+        android:textAlignment="center"
+        android:fontFamily="casual"
+        android:text="Too much unprotected exposure to the sun can cause skin damage, eye damage, immune system suppression, and skin cancer!"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        />
+
+</RelativeLayout>
